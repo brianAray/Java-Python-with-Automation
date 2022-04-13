@@ -1,0 +1,28 @@
+What is BDD?
+What is the benefit of BDD?
+What are some examples of BDD frameworks?
+What is Jasmine?
+How do you define a test suite in Jasmine?
+How do you define a test in Jasmine?
+How do you disable a test in Jasmine?
+What are some of the built-in expectations in Jasmine?
+How do you run a test suite in Jasmine?
+What is Cucumber?
+What is a feature file?
+What is Gherkin?
+How many languages is Gherkin available in?
+What are some Gherkin keywords and their use cases?
+What is a step?
+What is a step definition file?
+What is glue code?
+How do you run your cucumber steps in Python?
+What is Selenium?
+How do you set up your Selenium WebDriver?
+What are the different Selenium locators?
+How do you type text into an input box using Selenium?
+How do you click a button using Selenium?
+How do you execute JavaScript in the browser using Selenium?
+What types of information can the the WebDriver provide developers in a script?
+When is it NOT reasonable to automate a task?
+What is a Selenium wait?
+What are the different types of waits?
