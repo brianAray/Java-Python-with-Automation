@@ -1,4 +1,4 @@
-﻿1. What is SQL?
+1. What is SQL?
 2. What is a database management system? A relational database management system?
 3. What is a database?
 4. What are the sublanguages of SQL?
