@@ -1,5 +1,5 @@
 
-# Python With Automation Environment Setup Guide
+# Java / Python With Automation Environment Setup Guide
 ---
 
 ## Purpose
@@ -28,7 +28,7 @@ The following technologies and/or services are **required** for this program:
 
 - **Postman**: Postman is used for testing RESTful APIs. We'll use it to set up collections of tests for the RESTful APIs we design throughout the program. It can also be used to quickly test a single endpoint.
 
-- **Python**: We will be using Python 3 as one of our primary languages for the duration of the program. This Python installation will provide the standard library, preferred installer program, and several other components that make building and running Python applications possible.
+- **Python**: We will be using Python 3 as one of our primary languages for the duration of the program. Make sure if you do download it to NOT download Python 2 or any versions that begin with Python 2 as we they are not backwards compatible with each other. This Python installation will provide the standard library, preferred installer program, and several other components that make building and running Python applications possible.
 
 - **PostgreSQL ODBC Driver**: When building Python applications, we will utilize `pyodbc`, a PyPI module that makes accessing ODBC databases easy. As such, you'll need to download and configure a Postgres-specific ODBC driver.
 
@@ -40,11 +40,11 @@ Optional
 
 > Understand that an IDE is not essential to programming, it provides a lot of helpful features like autocorrect and error checking, a handy editor and terminal to make testing and debugging easier, clear file structure, and more. However, the IDE itself is basically a glorified text editor, even notepad.exe is fine to use to make programs so don't confuse the IDE with the program, it is still only a tool used to make the program, not the program itself. 
 
-- **Intellij Community Edition**: Intellij community edition is an excellent Java focused IDE. Make sure to install the community edition instead of the ultimate as that begins with a free trial and then requires a subscription. Intellij also has a plugin market that can further enhance your programming experience.
+- **Visual Studio Code**: This will be the IDE used during training. If you choose to use a different IDE, that is fine too. Visual Studio Code is a text editor that makes viewing and modifying code simple. VS Code provides support for numerous languages and will be the primary IDE of choice during all sessions.
 
-- **Visual Studio Code (Optional)**: Visual Studio Code is a text editor that makes viewing and modifying code simple. Do not confuse this tool with an integrated development environment as it does not come equipped with all of the development tools you typically find in an IDE. This tool is optional, but it can be helpful if you are new to programming and wish to familiarize yourself with the syntax of the Java programming language. 
+- **Intellij Community Edition (Optional)**: Intellij community edition is an excellent Java focused IDE. We are not using IntelliJ due to the size of the IDE, while it is a great IDE for programming with Java, it's significant size creates a lot of bloat that is only really viable if you know how to take advantage of it. Make sure to install the community edition instead of the ultimate as that begins with a free trial and then requires a subscription. Intellij also has a plugin market that can further enhance your programming experience.
 
-- **PyCharm (Optional)**: PyCharm acts as an integrated development environment for Python. Again, an IDE is not required, but it is useful for rapid development.
+- **PyCharm (Optional)**: PyCharm acts as an integrated development environment for Python. Similar to IntelliJ as it is part of the JetBrains family, a powerful IDE but includes a lot of bloat that can significantly reduce your development speed unless your system is able to handle it.
 
 ## Installation Methods
 
@@ -52,6 +52,9 @@ There are two provided methods of attaining and configuring all of the necessary
 
 1. Via a *package manager* or command-line installer
 2. Manually downloading the necessary software
+
+
+It is recommended to use a package manager as the manual method is prone to issues. If for some reason the recommended package n
 
 Neither method is more "correct" than the other. You should choose the method of attaining the tools that works best for you. You may even choose to mix both methods, downloading some tools manually and others via a package manager.
 
