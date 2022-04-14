@@ -59,18 +59,13 @@ It is recommended to use a package manager as the manual method is prone to issu
 Neither method is more "correct" than the other. You should choose the method of attaining the tools that works best for you. You may even choose to mix both methods, downloading some tools manually and others via a package manager.
 
 
-## Video walkthrough (Method 1)
-
-[![PWA Environment Setup](./images/thumbnail.png)](https://vimeo.com/692694597)
-
-
 <details><summary>Method 1: Installation Guide Using A Package Manager</summary>
 <p>
 A *package manager* is a command line tool that allows you to install and manage software. You can use a package manager to install all of the software listed here.
 
 The package manager that we'll be using for this guide is called "Scoop". It's a command-line installer for Windows, which means that you'll have to be running Windows in order to use this tool. You'll also need PowerShell 5 (or a later version) installed.
 
-**Note**: If you are not running Windows and still want to use a package manager, feel free to do so. You'll have to, however, know how to use your package manager of choice as there won't be instructions provided here since there are many package managers available. **If you do not wish to use a package manager, please skip to method 2.**
+**Note**: If you are not running Windows and still want to use a package manager, for MacOS there is [HomeBrew](https://brew.sh/). You'll have to, however, know how to use your package manager of choice as there won't be instructions provided here since there are many package managers available. **If you do not wish to use a package manager, please skip to method 2.**
 </p>
     
     
@@ -130,15 +125,7 @@ Now verify that you have installed Java properly by typing this command:
 
      java -version
 
-### Step 5: Install Spring Tool Suite 4
-
-In order to install Intellij IDEA community edition java IDE, run this command in your terminal:
-
-    scoop install idea
-
-If your installation was successful, you should now be able to search for "Spring Tool Suite" in your Windows search bar.
-
-### Step 6: Install Maven
+### Step 5: Install Maven
 
 In order to install Maven, run the following command in your terminal:
 
@@ -148,7 +135,7 @@ Verify that your Maven installation was successful by typing the following:
 
     mvn -version
 
-### Step 7: Install DBeaver
+### Step 6: Install DBeaver
 
 In order to install DBeaver, run the following command in your terminal:
 
@@ -156,7 +143,7 @@ In order to install DBeaver, run the following command in your terminal:
 
 You can verify that you have installed DBeaver properly by searching for "DBeaver" in your Windows search bar.
 
-### Step 8: Install Postman
+### Step 7: Install Postman
 
 In order to install Postman, run the following command in your terminal:
 
@@ -164,7 +151,7 @@ In order to install Postman, run the following command in your terminal:
 
 Verify that the program was installed properly by searching for "Postman" in your windows search bar.
 
-### Step 9: Install Python
+### Step 8: Install Python
 
 In order to install Python, run the following command in your terminal:
 
@@ -174,18 +161,26 @@ Verify that your Python installation was successful by typing the following in y
 
     python --version
 
-### Step 10: Install PyCharm
+### Step 9: Install The PostgreSQL ODBC Driver
+
+Scoop does not support the installation of the PostgreSQL ODBC Driver. As such, please skip to the [manual installation subsection](#step-10-install-the-postgresql-odbc-driver) which details how to install the driver.
+    
+### Step 10: Install Visual Studio Code
+    
+To install Visual Studio code we can use
+       
+    scoop install vscode
+
+You can check to see if Visual Studio Code by searching for it in the start menu. You can also open it up using the terminal with the command "code".
+
+### Step 11 (Optional): Install PyCharm
 
 In order to install PyCharm, run the following command in your terminal:
 
-    scopp install pycharm
+    scoop install pycharm
 
 If your installation was successful, you should now be able to search for "PyCharm" in your Windows search bar.
-
-### Step 11: Install The PostgreSQL ODBC Driver
-
-Scoop does not support the installation of the PostgreSQL ODBC Driver. As such, please skip to the [manual installation subsection](#step-10-install-the-postgresql-odbc-driver) which details how to install the driver.
-
+    
 ### Step 12: Install PostgreSQL (Optional)
 
 In order to install PostgreSQL, we will NOT be using Scoop as we require PostgreSQL 10, a version that is not currently supported by Scoop. That said, we will manually download the PostgreSQL installer visiting the [official website](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads).
@@ -221,14 +216,6 @@ Continue to hit "Next" until you reach the "Password" menu. Here you will be tas
 After you've decided on a password, hit "Next" on the remaining menus and allow time for Postgres to be installed. Once the installation is complete, you might be asked if you want to launch Stack Builder. You can say "no".
 
 PostgreSQL should now be successfully installed on your computer.
-
-### Step 13: Install Visual Studio Code (Optional)
-
-In order to install Visual Studio Code, run the following command in your terminal:
-
-    scoop install vscode
-
-If the installation was successful, you should be able to search for "Visual Studio Code" in the Windows search bar.
 
 </details>
     
@@ -411,28 +398,7 @@ You should see your operating system listed ("Windows 10" in the above example) 
 
 ![](./images/JDK-Version.jpg)
 
-### Step 3: Install Intellij IDEA Community Edition
-
-[![Video Guide to Installing IntelliJ](./images/installingIntellij.png)](https://vimeo.com/693833640)
-    
-    
-1. Navigate to the [Intellij IDEA](https://www.jetbrains.com/idea/download/#section=windows) website and download Intellij IDEA Community Edition. 
-
-![](./images/IDEA-download.png)
-
-2. Once the download has finished go to your downloads folder, search for the Intellij Community Edition .exe file and double click it to begin the install process.
-
-3. Decide on the location that you wish to download the application
-
-![](./images/IDEA-location.png)
-
-4. Setup the associations with the IDE in order for it to automatically open java files, and other functionalities like being able to open a file directly from the CLI using  `idea`
-
-![](./images/IDEA-associate.png)
-
-5. Finish the install and open the application from the start menu if you chose for it to not create a desktop shortcut
-
-### Step 4: Install Apache Maven
+### Step 3: Install Apache Maven
     
 [![Video Guide to Install Apache Maven](./images/installingMaven.png)](https://vimeo.com/693833655)
 
@@ -501,7 +467,7 @@ You should see your operating system listed ("Windows 10" in the above example) 
 
 ![](./images/MVN-Version.jpg)
 
-### Step 5: Install PostgreSQL 10
+### Step 4: Install PostgreSQL 10
 
 [![Video Guide Installing PostgreSQL 10](./images/installingPsql.png)](https://vimeo.com/693833666)
     
@@ -540,7 +506,7 @@ After you've decided on a password, hit "Next" on the remaining menus and allow 
 
 PostgreSQL should now be successfully installed on your computer.
 
-### Step 6: Install DBeaver
+### Step 5: Install DBeaver
 
 [![Video Guide Installing DBeaver](./images/installingDbeaver.png)](https://vimeo.com/693833648)
      
@@ -572,7 +538,7 @@ When you arrive at the portion of the setup which is titled "Choose Components",
 
 If your installation was successful, you should now be able to search for and find "DBeaver" using your computer's search bar.
 
-### Step 7: Install Postman
+### Step 6: Install Postman
 
 In order to download Postman, please visit [Postman's official website](https://www.postman.com/downloads/).
 
@@ -594,7 +560,7 @@ Upon double clicking the executable, the installer will be launched and the prog
 
 Note that you'll likely have to sign up for an account to use the application. Please do so as signing up for an account is completely free.
 
-### Step 8: Install Python
+### Step 7: Install Python
 
 [![Video Guide to Installing Python 3.9](./images/installingPython.png)](https://vimeo.com/693833699)
     
@@ -638,8 +604,60 @@ Once you've ensured that all of the necessary boxes are checked, hit the "Instal
     python --version
 
 If your Python version is displayed, your installation was successful.
+    
+### Step 8: Install The PostgreSQL ODBC Driver
+    
+[![Video Guide to Installing PostgreSQL ODBC Driver](./images/installingPsqlOdbc.png)](https://vimeo.com/693833678)
 
-### Step 9: Install PyCharm
+**Note**: If you are not running Windows, this process will look somewhat different for you. You are still responsible for configuring the development environment for your own operating system.
+
+1. Navigate to [PostgreSQL's official ODBC download site](https://www.postgresql.org/ftp/odbc/versions/).
+
+2. You should see several directories:
+
+![ODBC Downloads](./images/odbc-downloads.PNG)
+
+The directory you click on depends on your operating system. In order to find out which directory to open, take a look at the README file that is listed under the directories on the site. Generally speaking, Windows users will want to use the "msi" directory while *nix users will want to use the "src" directory.
+
+3. Once you've clicked the appropriate folder, scroll down to the "psqlodbc_10" files:
+
+![PSQL ODBC Download Link](./images/psql-odbc.PNG)
+
+Choose any version of 10 which is compatible with your operating system. 
+
+4. After you've downloaded the file, unzip it. Open the folder to which you extracted the files and run the installer. You should see a setup box:
+
+![ODBC Wizard](./images/odbc-wizard.PNG)
+
+Move the default options for the driver and hit "Install" once you reach the final screen of the setup box.
+
+This should complete the installation of your ODBC driver.
+    
+### Step 9: Install Visual Studio Code
+    
+[![Setup guide for Visual Studio Code](https://user-images.githubusercontent.com/100561922/163296731-2a970e49-b897-4df7-a487-eed5d6421706.png)]({https://vimeo.com/699219158} "Guide to Install Visual Studio Code")
+
+In order to download Visual Studio Code, please visit [Visual Studio Code's official website](https://code.visualstudio.com/download).
+
+Once you've navigated to the website, you should see the following:
+
+![Image of Visual Studio Code download options](./images/vs-code.PNG)
+
+Choose the installer that is compatible with your system. Once you've clicked the installer of your choice, you'll be prompted to save the file. Do so.
+
+![Downloading Visual Studio Code Installer](./images/save-vscode.PNG)
+
+Once you've saved the installer, it should be located in your "Downloads" folder.
+
+![Visual Studio Code Download](./images/vscode-download.PNG)
+
+Double click the installer. Once you've done so, the installer should be launched. Accept the license agreement and proceed until you reach a menu titled "Select Additional Tasks". Once you've arrived here, be sure to check all of the boxes that are checked in the image!
+
+![Open with Code](./images/open-with-code.PNG)
+
+After you've done so, hit "Next" and then "Install" on the next menu. If your installation was successful, you should be able to search for "Visual Studio Code" on your machine.
+
+### Step 10 (Optional): Install PyCharm
 
 [![Video Guide to Installing PyCharm](./images/installingPycharm.png)](https://vimeo.com/693833692)
     
@@ -667,59 +685,18 @@ Select your operating system first. After you've done so, download the *Communit
 
 7. Once your installation is complete, you should be able to search for "PyCharm" on your machine and launch it.
 
-### Step 10: Install The PostgreSQL ODBC Driver
-    
-[![Video Guide to Installing PostgreSQL ODBC Driver](./images/installingPsqlOdbc.png)](https://vimeo.com/693833678)
-
-**Note**: If you are not running Windows, this process will look somewhat different for you. You are still responsible for configuring the development environment for your own operating system.
-
-1. Navigate to [PostgreSQL's official ODBC download site](https://www.postgresql.org/ftp/odbc/versions/).
-
-2. You should see several directories:
-
-![ODBC Downloads](./images/odbc-downloads.PNG)
-
-The directory you click on depends on your operating system. In order to find out which directory to open, take a look at the README file that is listed under the directories on the site. Generally speaking, Windows users will want to use the "msi" directory while *nix users will want to use the "src" directory.
-
-3. Once you've clicked the appropriate folder, scroll down to the "psqlodbc_10" files:
-
-![PSQL ODBC Download Link](./images/psql-odbc.PNG)
-
-Choose any version of 10 which is compatible with your operating system. 
-
-4. After you've downloaded the file, unzip it. Open the folder to which you extracted the files and run the installer. You should see a setup box:
-
-![ODBC Wizard](./images/odbc-wizard.PNG)
-
-Move the default options for the driver and hit "Install" once you reach the final screen of the setup box.
-
-This should complete the installation of your ODBC driver.
-
-### Step 11: Install Visual Studio Code (Optional)
-
-In order to download Visual Studio Code, please visit [Visual Studio Code's official website](https://code.visualstudio.com/download).
-
-Once you've navigated to the website, you should see the following:
-
-![Image of Visual Studio Code download options](./images/vs-code.PNG)
-
-Choose the installer that is compatible with your system. Once you've clicked the installer of your choice, you'll be prompted to save the file. Do so.
-
-![Downloading Visual Studio Code Installer](./images/save-vscode.PNG)
-
-Once you've saved the installer, it should be located in your "Downloads" folder.
-
-![Visual Studio Code Download](./images/vscode-download.PNG)
-
-Double click the installer. Once you've done so, the installer should be launched. Accept the license agreement and proceed until you reach a menu titled "Select Additional Tasks". Once you've arrived here, be sure to check all of the boxes that are checked in the image!
-
-![Open with Code](./images/open-with-code.PNG)
-
-After you've done so, hit "Next" and then "Install" on the next menu. If your installation was successful, you should be able to search for "Visual Studio Code" on your machine.
-
-    
 </details>
+
+Startup Guide for Visual Studio Code for Projects
+===
+
+### Startup with Python
+
+[![Quick start with Python in Visual Studio Code](https://user-images.githubusercontent.com/100561922/163297019-7cf56da3-056d-45e8-9158-47d87e66444b.png)]({https://vimeo.com/699221053} "Video guide to first start with Python in Visual Studio Code")
+
+### Startup with Java
     
+[![Quick start with Java in Visual Studio Code](https://user-images.githubusercontent.com/100561922/163297190-0b72d674-bbb1-4142-803b-ac0aa87f4fef.png)]({https://vimeo.com/699219576} "Video guide to first start with Java in Visual Studio Code")
     
 Additional Resources
 ====================
